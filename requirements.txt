@@ -1,9 +1,8 @@
 # =============================================================================
 # iText2KG Requirements
 # =============================================================================
-# 
 
-# Core LangChain packages 
+# Core LangChain packages
 langchain~=0.3.26
 langchain-core~=0.3.69
 langchain-openai~=0.2.0
@@ -33,3 +32,10 @@ pydantic-settings>=2.6.0,<3.0.0
 # Testing framework (development dependency)
 pytest>=8.4.0,<9.0.0
 pytest-asyncio>=1.1.0,<2.0.0
+
+# GLiNER dependency for IBM--zshot
+gliner>=0.1.0
+
+# Web server for HTTP API
+fastapi>=0.115.0,<1.0.0
+uvicorn[standard]>=0.32.0,<1.0.0
