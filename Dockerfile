@@ -40,5 +40,9 @@ WORKDIR /app
 # Expose the port from port_mapping_50_gap10.json
 EXPOSE 11380
 
-# Default command - run the main module
+# Set environment variables for FastAPI
+ENV HOST=0.0.0.0
+ENV PORT=11380
+
+# Default command - run the itext2kg module (which starts uvicorn)
 CMD ["python", "-m", "itext2kg"]

@@ -1,10 +1,10 @@
 #!/bin/bash
 # Entrypoint script for iText2KG Docker container
-# Starts the iText2KG application
+# Starts the iText2KG FastAPI application
 
 set -e
 
-echo "Starting iText2KG application..."
+echo "Starting iText2KG FastAPI application..."
 
 # Set environment variables
 export PYTHONUNBUFFERED=1
@@ -12,5 +12,5 @@ export PYTHONUNBUFFERED=1
 # Change to app directory
 cd /app
 
-# Run the application - can be overridden with arguments
-exec python -m itext2kg "$@"
+# Run the FastAPI application directly
+exec python main.py "$@"
